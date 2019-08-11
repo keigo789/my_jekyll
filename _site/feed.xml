@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-JP"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/jekyll_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" hreflang="ja-JP" /><updated>2019-07-29T13:40:37+09:00</updated><id>http://localhost:4000/jekyll_blog/feed.xml</id><title type="html">jekyll_blog</title><subtitle>This is keigo's blog</subtitle><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-28/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-28T00:00:00+09:00</published><updated>2019-07-28T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-28/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-28/my_help">&lt;p&gt;新しいgithubのアカウントを作成した。&lt;/p&gt;
+
+&lt;p&gt;フォークやプルリクをうまくできないのでgithubの自分のアカウントをリセット。&lt;/p&gt;
+
+&lt;p&gt;自分のアカウントでAccountを選択。&lt;/p&gt;
+
+&lt;p&gt;Delete your accountを選択。&lt;/p&gt;
+
+&lt;p&gt;Githubのアカウントとパスワードを入力。&lt;/p&gt;
+
+&lt;p&gt;真ん中の部分にdelete my accountと入力。&lt;/p&gt;
+
+&lt;p&gt;Account successfully deletedと表示され、アカウントの削除が完了。&lt;/p&gt;
+
+&lt;p&gt;新しいアカウント(keigo789)を作成。&lt;/p&gt;
+
+&lt;p&gt;my_helpのフォークは成功したが、プルリクがうまくいかない。&lt;/p&gt;
+
+&lt;p&gt;プルリクのページには飛べるが、ボタンをクリックできない。&lt;/p&gt;
+
+&lt;p&gt;Don’t worry, you can still create the pull request.と言われるが、pull requestできない。&lt;/p&gt;
+
+&lt;p&gt;携帯からだとプルリクできた。&lt;/p&gt;
+
+&lt;p&gt;原因はmacにあり？&lt;/p&gt;</content><author><name></name></author><summary type="html">新しいgithubのアカウントを作成した。</summary></entry><entry><title type="html">可変長引数</title><link href="http://localhost:4000/jekyll_blog/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0" rel="alternate" type="text/html" title="可変長引数" /><published>2019-07-26T00:00:00+09:00</published><updated>2019-07-26T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0">&lt;p&gt;可変長引数&lt;/p&gt;
+
+&lt;p&gt;関数やメソッドの引数が固定ではなく任意の個数となっている引数のこと&lt;/p&gt;
+
+&lt;p&gt;いくつかの言語では型安全が保証されなくなるので注意が必要である&lt;/p&gt;
+
+&lt;p&gt;可変長引数を可変長引数のまま引き回すには受け取り側も呼び出し側もアスタリスクをつければよい&lt;/p&gt;
+
+&lt;p&gt;可変長引数を受け取った後の（アスタリスクのついていない） args は配列なので，
+一回展開してから渡さないと，もう一回り配列に格納されてしまう&lt;/p&gt;
+
+&lt;p&gt;詳しくは&lt;strong&gt;&lt;a href=&quot;https://qiita.com/t3kot3ko/items/ba3ce3a9fa13e8c8045c&quot;&gt;可変長引数を引き回す&lt;/a&gt;&lt;/strong&gt;を参考&lt;/p&gt;</content><author><name></name></author><summary type="html">可変長引数</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-23/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-23T00:00:00+09:00</published><updated>2019-07-23T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-23/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-23/my_help">&lt;p&gt;前回thorに書き換えたmy_helpに変更を加えた。&lt;/p&gt;
+
+&lt;p&gt;gliではlistのコマンドで3種類の動きができた(変数無し、1つ、2つの3通り)が、thorに書き換える際に再現できなかったため、listのコマンドを3つのコマンドに分割することで対応した。&lt;/p&gt;
+
+&lt;p&gt;再現できなかった理由は、2つの変数を定義してしまうと、listのコマンドを動かす際に2つの変数を入力しないと、変数がないというエラーがでたから。&lt;/p&gt;
+
+&lt;p&gt;配列などを用いてもうまくいかず、関数を3つに分割する方法に逃げたが、可変長引数というものを用いて対応できると聞き、ifやnilをつかうことで、もともとのmy_helpと同様なlistコマンドを再現することができた。&lt;/p&gt;
+
+&lt;p&gt;可変長引数については次回説明をする。&lt;/p&gt;</content><author><name></name></author><summary type="html">前回thorに書き換えたmy_helpに変更を加えた。</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-20/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-20T00:00:00+09:00</published><updated>2019-07-20T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-20/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-20/my_help">&lt;p&gt;gliで書かれたプログラムをThorに書き換えていく。&lt;/p&gt;
+
+&lt;p&gt;まずは書き換える際に便利なコマンドを紹介する。&lt;/p&gt;
+
+&lt;p&gt;C-x 2  Emacsを上下に2分割&lt;/p&gt;
+
+&lt;p&gt;C-x 3  Emacsを左右に2分割&lt;/p&gt;
+
+&lt;p&gt;C-x o   分割されているファイル間を移動&lt;/p&gt;
+
+&lt;p&gt;C-x C-f 新たなファイルを開く&lt;/p&gt;
+
+&lt;p&gt;※Cはcontrolキー&lt;/p&gt;
+
+&lt;p&gt;今回はmy_helpをthorへ書き換えるので&lt;/p&gt;
+
+&lt;p&gt;require ‘thor’&lt;/p&gt;
+
+&lt;p&gt;require ‘my_help’&lt;/p&gt;
+
+&lt;p&gt;と書き加え、classをThorに継承したいので&lt;/p&gt;
+
+&lt;p&gt;class MyCLI &amp;lt; Thor&lt;/p&gt;
+
+&lt;p&gt;と書き換えることを忘れてはいけない。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://qiita.com/succi0303/items/32560103190436c9435b&quot;&gt;Thorの使い方まとめ&lt;/a&gt;&lt;/strong&gt;を参考にしながらコマンドを作成していく。&lt;/p&gt;
+
+&lt;p&gt;bundle update&lt;/p&gt;
+
+&lt;p&gt;bundle exec bin/my_help&lt;/p&gt;
+
+&lt;p&gt;を繰り返し、コマンドを完成させる。&lt;/p&gt;
+
+&lt;p&gt;フォークしてきたプログラムと同じ動きを再現できればOK&lt;/p&gt;</content><author><name></name></author><summary type="html">gliで書かれたプログラムをThorに書き換えていく。</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-18/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-18T00:00:00+09:00</published><updated>2019-07-18T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-18/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-18/my_help">&lt;p&gt;my_helpのthorへの書き換えを行う。&lt;/p&gt;
+
+&lt;p&gt;my_helpのbinフォルダの中にgliで書かれているmy_helpがあるので、これをthorへ書き換える。&lt;/p&gt;
+
+&lt;p&gt;その手順を記していく。&lt;/p&gt;
+
+&lt;p&gt;事前準備&lt;/p&gt;
+
+&lt;p&gt;1.まずはforkしたmy_helpがbundleで動くかどうかを確認。&lt;/p&gt;
+
+&lt;p&gt;bundle update&lt;/p&gt;
+
+&lt;p&gt;bundle exec bin/my_help&lt;/p&gt;
+
+&lt;p&gt;2.binフォルダのmy_helpをmy_help_thorにコピー。&lt;/p&gt;
+
+&lt;p&gt;cp my_help my_help_thor&lt;/p&gt;
+
+&lt;p&gt;3.2.のコピーが正しく行われているかどうかを確認&lt;/p&gt;
+
+&lt;p&gt;bundle update&lt;/p&gt;
+
+&lt;p&gt;bundle exec bin/my_help_thor&lt;/p&gt;
+
+&lt;p&gt;これでmy_helpが動けばOK&lt;/p&gt;</content><author><name></name></author><summary type="html">my_helpのthorへの書き換えを行う。</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-17/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-17T00:00:00+09:00</published><updated>2019-07-17T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-17/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-17/my_help">&lt;p&gt;daddygongonからmy_helpをfork&lt;/p&gt;
+
+&lt;p&gt;If this dialog fails to load, you can visit the fork page directly.&lt;/p&gt;
+
+&lt;p&gt;となり、forkすることができない。&lt;/p&gt;
+
+&lt;p&gt;リンクから直接forkすることはできるが、おそらくpull_requestできない。&lt;/p&gt;
+
+&lt;p&gt;A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.&lt;/p&gt;
+
+&lt;p&gt;リンクからforkしようとするとTeam_Nishitaniでfork済とでたのでkeigo7okabataでfork
+。&lt;/p&gt;
+
+&lt;p&gt;git clone https://github.com/keigo7okabata/my_helpでレポジトリを自分のローカルレポジトリにクローン。&lt;/p&gt;
+
+&lt;p&gt;my_help.gemspecに下記一行を追加。&lt;/p&gt;
+
+&lt;p&gt;s.add_development_dependency(‘thor’)&lt;/p&gt;
+
+&lt;p&gt;ここで一旦pull_requestを行うがやはりできない。&lt;/p&gt;
+
+&lt;p&gt;Checking mergeability… Don’t worry, you can still create the pull request.&lt;/p&gt;
+
+&lt;p&gt;とりあえずthorへの書き換えを行うことにする。&lt;/p&gt;</content><author><name></name></author><summary type="html">daddygongonからmy_helpをfork</summary></entry><entry><title type="html">課題</title><link href="http://localhost:4000/jekyll_blog/19-07-16/%E8%AA%B2%E9%A1%8C" rel="alternate" type="text/html" title="課題" /><published>2019-07-16T00:00:00+09:00</published><updated>2019-07-16T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-16/%E8%AA%B2%E9%A1%8C</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-16/%E8%AA%B2%E9%A1%8C">&lt;p&gt;my_helpをthorに書き換える&lt;/p&gt;
+
+&lt;p&gt;このブログにて、書き換えの手順を示す&lt;/p&gt;</content><author><name></name></author><summary type="html">my_helpをthorに書き換える</summary></entry><entry><title type="html">Jekyll</title><link href="http://localhost:4000/jekyll_blog/19-07-13/jekyll" rel="alternate" type="text/html" title="Jekyll" /><published>2019-07-13T00:00:00+09:00</published><updated>2019-07-13T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-13/jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-13/jekyll">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://qiita.com/daddygongon/items\
+/9b7182db29861744fc79&quot;&gt;jekyllのinstallとGithubPageとの連携&lt;/a&gt;&lt;/strong&gt;を参考に&lt;/p&gt;
+
+&lt;p&gt;1.まずはlocal_serverを立ち上げる&lt;/p&gt;
+
+&lt;p&gt;2.サーバーを立ち上げる際にエラーが出たので&lt;/p&gt;
+
+&lt;p&gt;gem ‘ffi’, ‘= 1.9.21’&lt;/p&gt;
+
+&lt;p&gt;をGemfileに追加し、&lt;/p&gt;
+
+&lt;p&gt;gem install ffi -v ‘1.9.21’&lt;/p&gt;
+
+&lt;p&gt;を行うことで解決。&lt;/p&gt;
+
+&lt;p&gt;3.GitHubにてレポジトリを作成し、git remote “作ったレポジトリのアドレス”&lt;/p&gt;</content><author><name></name></author><summary type="html">jekyllのinstallとGithubPageとの連携を参考に</summary></entry><entry><title type="html">課題</title><link href="http://localhost:4000/jekyll_blog/19-07-08/%E8%AA%B2%E9%A1%8C" rel="alternate" type="text/html" title="課題" /><published>2019-07-08T00:00:00+09:00</published><updated>2019-07-08T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-08/%E8%AA%B2%E9%A1%8C</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-08/%E8%AA%B2%E9%A1%8C">&lt;p&gt;my_helpをthorに書き換える&lt;/p&gt;
+
+&lt;p&gt;my_helpをforkし、西谷さんにpull_request&lt;/p&gt;</content><author><name></name></author><summary type="html">my_helpをthorに書き換える</summary></entry></feed>

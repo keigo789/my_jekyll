@@ -1,0 +1,9 @@
+1.daddygongonからmy_helpをfork
+
+If this dialog fails to load, you can visit the fork page directly.
+
+となり、forkすることができない。
+
+リンクから直接forkすることはできるが、おそらくpull_requestできない。
+
+thorに書き換えるためにとりあえずforkした。

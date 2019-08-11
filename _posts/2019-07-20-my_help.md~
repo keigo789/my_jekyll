@@ -1,0 +1,25 @@
+**[Thorの使い方まとめ](https://qiita.com/succi0303/items/32560103190436c9435b)*\
+*を参考に、gliで書かれたプログラムをThorに書き換えていく。
+
+まずは書き換える際に便利なコマンドを紹介する。
+
+C-x 2  Emacsを上下に2分割
+
+C-x 3  Emacsを左右に2分割
+
+C-x o  分割されているファイル間を移動
+
+
+
+今回はmy_helpをthorへ書き換えるので
+
+require 'thor'
+
+require 'my_help'
+
+と書き加え、classをThorに継承したいので
+
+class MyCLI < Thor
+
+と書き換えることを忘れてはいけない。
+
