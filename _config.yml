@@ -1,9 +1,9 @@
 title: jekyll_blog
 email: efm22104@kwansei.ac.jp
 description: This is keigo's blog
-baseurl: "/jekyll_blog"
-url: "http://keigo7okabata.github.io" # the base hostname & protocol for your si                      
-github_username:  keigo7okabata
+baseurl: "/my_jekyll"
+url: "http://keigo789.github.io" # the base hostname & protocol for your si                      
+github_username:  keigo789
 markdown: kramdown
 lang: ja-JP                                                                     
 #minimal_mistakes_skin: dark                                                                        
