@@ -1,4 +1,154 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-JP"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/jekyll_blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll_blog/" rel="alternate" type="text/html" hreflang="ja-JP" /><updated>2019-07-29T13:40:37+09:00</updated><id>http://localhost:4000/jekyll_blog/feed.xml</id><title type="html">jekyll_blog</title><subtitle>This is keigo's blog</subtitle><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-28/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-28T00:00:00+09:00</published><updated>2019-07-28T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-28/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-28/my_help">&lt;p&gt;新しいgithubのアカウントを作成した。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-JP"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/my_jekyll/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/my_jekyll/" rel="alternate" type="text/html" hreflang="ja-JP" /><updated>2019-09-02T11:41:20+09:00</updated><id>http://localhost:4000/my_jekyll/feed.xml</id><title type="html">jekyll_blog</title><subtitle>This is keigo's blog</subtitle><entry><title type="html">Reading_report</title><link href="http://localhost:4000/my_jekyll/19-08-23/reading_report" rel="alternate" type="text/html" title="Reading_report" /><published>2019-08-23T00:00:00+09:00</published><updated>2019-08-23T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-08-23/reading_report</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-08-23/reading_report">&lt;p&gt;山根さんの卒論(コマンドラインツール作成ライブラリThorによるhikiutilsの書き換え)でoptparseとThorが比較されていたので読んだ。&lt;/p&gt;
+
+&lt;p&gt;Thor&lt;/p&gt;
+
+&lt;p&gt;コマンドラインツールの作成を支援するライブラリのこと。&lt;/p&gt;
+
+&lt;p&gt;gitやbundlerのようにサブコマンドを含むコマンドラインツールを簡単に作成することが可能&lt;/p&gt;
+
+&lt;p&gt;基本的な流れ&lt;/p&gt;
+
+&lt;p&gt;1.Thorを継承したクラスのメソッドがコマンドになる&lt;/p&gt;
+
+&lt;p&gt;2.クラス.start(ARGV)でコマンドラインの処理をスタートする&lt;/p&gt;
+
+&lt;p&gt;startに渡す引数が空の場合、Thorはクラスのヘルプリストを出力。&lt;/p&gt;
+
+&lt;p&gt;サブコマンドやサブサブコマンドを容易に作ることができる。&lt;/p&gt;
+
+&lt;p&gt;optparse&lt;/p&gt;
+
+&lt;p&gt;getoptよりも簡便であり、柔軟性に富み、かつ強力なコマンドライン解析ライブラリ。&lt;/p&gt;
+
+&lt;p&gt;OptionParserのインスタンスでコマンドラインを解析するので、より宣言的なスタイルのコマンドライン解析手法である。&lt;/p&gt;
+
+&lt;p&gt;これを使うことで、GNU/POSIX構文でオプションを指定できるだけでなく、使用法やヘルプメッセージの生成もできる。&lt;/p&gt;
+
+&lt;p&gt;利用頻度はあまり高くないが、古くから開発されており、利用例が広く紹介されている。&lt;/p&gt;
+
+&lt;p&gt;基本的な流れ&lt;/p&gt;
+
+&lt;p&gt;1.OptionParserオブジェクトoptを生成&lt;/p&gt;
+
+&lt;p&gt;2.オプションを取り扱うブロックをopt.onに登録&lt;/p&gt;
+
+&lt;p&gt;3.opt.parse(ARGV)でコマンドラインを実際にparse&lt;/p&gt;
+
+&lt;p&gt;OptionParserはコマンドラインのオプションを取り扱うためのクラスなので、オブジェクトoptを生成されopt.onにコマンドを登録できる。&lt;/p&gt;
+
+&lt;p&gt;しかし、OptionParser#onにはコマンドが登録されているだけであるため、OptionParser#parseが呼ばれたとき、コマンドラインにオプションが指定されていれば実行される。&lt;/p&gt;
+
+&lt;p&gt;optparseはデフォルトで-helpと-versionのオプションを認識する&lt;/p&gt;</content><author><name></name></author><summary type="html">山根さんの卒論(コマンドラインツール作成ライブラリThorによるhikiutilsの書き換え)でoptparseとThorが比較されていたので読んだ。</summary></entry><entry><title type="html">Dsl_rake</title><link href="http://localhost:4000/my_jekyll/19-08-22/DSL_Rake" rel="alternate" type="text/html" title="Dsl_rake" /><published>2019-08-22T00:00:00+09:00</published><updated>2019-08-22T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-08-22/DSL_Rake</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-08-22/DSL_Rake">&lt;p&gt;DSL ドメイン固有言語 Domain specific language&lt;/p&gt;
+
+&lt;p&gt;特定のタスク向けに設計されたコンピュータ言語&lt;/p&gt;
+
+&lt;p&gt;DSL は、ある特定の領域（ドメイン）の問題を解決するために作られ、それ以外の領域の問題を解くことは想定していない。&lt;/p&gt;
+
+&lt;p&gt;そもそも、言語とは何かを記述するためのものであって、何かを記述することで問題が解決する場合もあれば、余計に解決しなくなる場合もある。&lt;/p&gt;
+
+&lt;p&gt;一方、汎用のプログラミング言語は一般に計算可能なものを計算するプログラムを、難しくなく書けることを意図して設計されている。&lt;/p&gt;
+
+&lt;p&gt;DSLは、大きく内部DSLと外部DSLに分類することができる。&lt;/p&gt;
+
+&lt;p&gt;内部DSL: 内部DSLは、汎用のプログラミング言語の書き方を工夫して、見かけ上の構文を自然言語に近づけた言語&lt;/p&gt;
+
+&lt;p&gt;外部DSL： 外部DSLは、汎用のプログラミング言語とはまったく別の構文を持ったDSL&lt;/p&gt;
+
+&lt;p&gt;内部DSLは、言語の標準機能による拡張であるため、フレームワークや特定作業の支援ツールとして提供されることが多い&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;ドメイン固有言語&quot;&gt;https://ja.m.wikipedia.org/wiki/ドメイン固有言語&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;DSL&quot;&gt;https://qiita.com/aya_eiya/items/07d89eb6c15317eeb68f&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Rake&lt;/p&gt;
+
+&lt;p&gt;ビルドツールの一種&lt;/p&gt;
+
+&lt;p&gt;RakefileはRubyでかかれている。&lt;/p&gt;
+
+&lt;p&gt;Rubyの無名関数ブロックを使い、各種タスクを定義する。一般的なタスクのライブラリがあり、一般的なファイル操作タスク、生成したファイルを削除するタスク（いわゆる clean タスク）などがある。&lt;/p&gt;
+
+&lt;p&gt;makeと同様、Rake はパターンに基づいてタスクを合成できる（例えば、ファイル名パターンに基づいてファイルのコンパイルタスクを自動的に構築するなど）。&lt;/p&gt;
+
+&lt;p&gt;Rakeは Ruby 1.9 から標準ライブラリの一部となっている。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;Rake&quot;&gt;https://ja.m.wikipedia.org/wiki/Rake_(ソフトウェア)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">DSL ドメイン固有言語 Domain specific language</summary></entry><entry><title type="html">Build_awesome_commandline</title><link href="http://localhost:4000/my_jekyll/19-08-18/build_awesome_commandline" rel="alternate" type="text/html" title="Build_awesome_commandline" /><published>2019-08-18T00:00:00+09:00</published><updated>2019-08-18T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-08-18/build_awesome_commandline</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-08-18/build_awesome_commandline">&lt;p&gt;コマンドライン&lt;/p&gt;
+
+&lt;p&gt;実行可能部分とオプション部分と引数部分がある&lt;/p&gt;
+
+&lt;p&gt;オプションは1つのハイフンの後ろか2つのハイフンの後ろにつける&lt;/p&gt;
+
+&lt;p&gt;1つの方は短め(1文字で完結できる)、2つの方は長め(とゆうか省略系がない感じ？)&lt;/p&gt;
+
+&lt;p&gt;2つの方はどんな意味がわかるようにいくつかの単語を組み合わせる&lt;/p&gt;
+
+&lt;p&gt;ls -lat    ls -l -a -t は同じ&lt;/p&gt;
+
+&lt;p&gt;引数はオプションではなくコマンドラインでの指示が実行される要素&lt;/p&gt;
+
+&lt;p&gt;全てのコマンドラインが引数をもつわけではない&lt;/p&gt;
+
+&lt;p&gt;Global options&lt;/p&gt;
+
+&lt;p&gt;どのコマンドにも適用されるもの&lt;/p&gt;
+
+&lt;p&gt;Commad options&lt;/p&gt;
+
+&lt;p&gt;コマンド特有のもの&lt;/p&gt;
+
+&lt;p&gt;そのコマンド内でしか適用されない&lt;/p&gt;</content><author><name></name></author><summary type="html">コマンドライン</summary></entry><entry><title type="html">Build_awesome_commandline</title><link href="http://localhost:4000/my_jekyll/19-08-11/build_awesome_commandline" rel="alternate" type="text/html" title="Build_awesome_commandline" /><published>2019-08-11T00:00:00+09:00</published><updated>2019-08-11T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-08-11/build_awesome_commandline</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-08-11/build_awesome_commandline">&lt;p&gt;わかりやすく完結しているものがよい&lt;/p&gt;
+
+&lt;p&gt;今のままだと新たにデータを追加する際にコードを編集し、データベースを修正し、新たにデータベースサーバーを構築しなければならない。&lt;/p&gt;
+
+&lt;p&gt;この作業をもっと簡単にしたい。&lt;/p&gt;
+
+&lt;p&gt;簡単なものは維持や強化や理解も簡単である。&lt;/p&gt;
+
+&lt;p&gt;3つのアプリがあるとして、なにか追加する度に3つのアプリ全てに変更を加えるのは大変である。&lt;/p&gt;
+
+&lt;p&gt;1つのファイルで実行できる。&lt;/p&gt;
+
+&lt;p&gt;使うのが簡単&lt;/p&gt;
+
+&lt;p&gt;役立つ&lt;/p&gt;
+
+&lt;p&gt;他より使いやすい&lt;/p&gt;
+
+&lt;p&gt;もともと賢明であるが他の設定も可能&lt;/p&gt;
+
+&lt;p&gt;簡単にインストールできる&lt;/p&gt;
+
+&lt;p&gt;優雅に？失敗できる&lt;/p&gt;
+
+&lt;p&gt;新たな特徴？を得られ簡単にバグを直すことができる&lt;/p&gt;</content><author><name></name></author><summary type="html">わかりやすく完結しているものがよい</summary></entry><entry><title type="html">Gli_thor_optparse</title><link href="http://localhost:4000/my_jekyll/19-08-05/gli_thor_optparse" rel="alternate" type="text/html" title="Gli_thor_optparse" /><published>2019-08-05T00:00:00+09:00</published><updated>2019-08-05T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-08-05/gli_thor_optparse</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-08-05/gli_thor_optparse">&lt;p&gt;GLIとは&lt;/p&gt;
+
+&lt;p&gt;Rubyでコマンドラインプログラムを作成するときに使えるツール&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://qiita.com/ktgPlus/items/4d5cfa14d63d1ef56bd4&quot;&gt;GLIというツールについてのこと&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;thorとは&lt;/p&gt;
+
+&lt;p&gt;コマンドラインツールの作成を支援するライブラリ&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://qiita.com/succi0303/items/32560103190436c9435b&quot;&gt;thorの使い方まとめ&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;optparseとは&lt;/p&gt;
+
+&lt;p&gt;昔からあるgetoptよりも簡便かつ柔軟性に富むコマンドライン解析ライブラリ&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://docs.python.org/ja/3/library/optparse.html&quot;&gt;コマンドラインオプション解析器&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">GLIとは</summary></entry><entry><title type="html">New_account</title><link href="http://localhost:4000/my_jekyll/19-08-02/new_account" rel="alternate" type="text/html" title="New_account" /><published>2019-08-02T00:00:00+09:00</published><updated>2019-08-02T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-08-02/new_account</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-08-02/new_account">&lt;p&gt;新しいアカウントでTeamNishitaniに参加。&lt;/p&gt;
+
+&lt;p&gt;gitHubに公開鍵が設定されていなかったので、このブログを移動できなかったので公開鍵を設定。&lt;/p&gt;
+
+&lt;p&gt;公開鍵は隠しファイルの.sshの中に保存されているのでpbcopyを用いてコピー。&lt;/p&gt;
+
+&lt;p&gt;pbcopy &amp;lt; /.ssh/id_rsa.pubを使う。&lt;/p&gt;
+
+&lt;p&gt;gitHub内でsettings/ssh/Add SSH keyと進んでいき、titleに公開鍵名、keyに公開鍵の中身を登録。&lt;/p&gt;
+
+&lt;p&gt;ssh -T git@github.com で接続を確認。&lt;/p&gt;
+
+&lt;p&gt;確認後、jekyllのブログの中身を移動すると、無事動かすことができた。&lt;/p&gt;</content><author><name></name></author><summary type="html">新しいアカウントでTeamNishitaniに参加。</summary></entry><entry><title type="html">New_account</title><link href="http://localhost:4000/my_jekyll/19-07-28/new_account" rel="alternate" type="text/html" title="New_account" /><published>2019-07-28T00:00:00+09:00</published><updated>2019-07-28T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-07-28/new_account</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-07-28/new_account">&lt;p&gt;新しいgithubのアカウントを作成した。&lt;/p&gt;
 
 &lt;p&gt;フォークやプルリクをうまくできないのでgithubの自分のアカウントをリセット。&lt;/p&gt;
 
@@ -22,7 +172,7 @@
 
 &lt;p&gt;携帯からだとプルリクできた。&lt;/p&gt;
 
-&lt;p&gt;原因はmacにあり？&lt;/p&gt;</content><author><name></name></author><summary type="html">新しいgithubのアカウントを作成した。</summary></entry><entry><title type="html">可変長引数</title><link href="http://localhost:4000/jekyll_blog/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0" rel="alternate" type="text/html" title="可変長引数" /><published>2019-07-26T00:00:00+09:00</published><updated>2019-07-26T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0">&lt;p&gt;可変長引数&lt;/p&gt;
+&lt;p&gt;原因はmacにあり？&lt;/p&gt;</content><author><name></name></author><summary type="html">新しいgithubのアカウントを作成した。</summary></entry><entry><title type="html">可変長引数</title><link href="http://localhost:4000/my_jekyll/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0" rel="alternate" type="text/html" title="可変長引数" /><published>2019-07-26T00:00:00+09:00</published><updated>2019-07-26T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-07-26/%E5%8F%AF%E5%A4%89%E9%95%B7%E5%BC%95%E6%95%B0">&lt;p&gt;可変長引数&lt;/p&gt;
 
 &lt;p&gt;関数やメソッドの引数が固定ではなく任意の個数となっている引数のこと&lt;/p&gt;
 
@@ -33,7 +183,7 @@
 &lt;p&gt;可変長引数を受け取った後の（アスタリスクのついていない） args は配列なので，
 一回展開してから渡さないと，もう一回り配列に格納されてしまう&lt;/p&gt;
 
-&lt;p&gt;詳しくは&lt;strong&gt;&lt;a href=&quot;https://qiita.com/t3kot3ko/items/ba3ce3a9fa13e8c8045c&quot;&gt;可変長引数を引き回す&lt;/a&gt;&lt;/strong&gt;を参考&lt;/p&gt;</content><author><name></name></author><summary type="html">可変長引数</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-23/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-23T00:00:00+09:00</published><updated>2019-07-23T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-23/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-23/my_help">&lt;p&gt;前回thorに書き換えたmy_helpに変更を加えた。&lt;/p&gt;
+&lt;p&gt;詳しくは&lt;strong&gt;&lt;a href=&quot;https://qiita.com/t3kot3ko/items/ba3ce3a9fa13e8c8045c&quot;&gt;可変長引数を引き回す&lt;/a&gt;&lt;/strong&gt;を参考&lt;/p&gt;</content><author><name></name></author><summary type="html">可変長引数</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/my_jekyll/19-07-23/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-23T00:00:00+09:00</published><updated>2019-07-23T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-07-23/my_help</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-07-23/my_help">&lt;p&gt;前回thorに書き換えたmy_helpに変更を加えた。&lt;/p&gt;
 
 &lt;p&gt;gliではlistのコマンドで3種類の動きができた(変数無し、1つ、2つの3通り)が、thorに書き換える際に再現できなかったため、listのコマンドを3つのコマンドに分割することで対応した。&lt;/p&gt;
 
@@ -41,7 +191,7 @@
 
 &lt;p&gt;配列などを用いてもうまくいかず、関数を3つに分割する方法に逃げたが、可変長引数というものを用いて対応できると聞き、ifやnilをつかうことで、もともとのmy_helpと同様なlistコマンドを再現することができた。&lt;/p&gt;
 
-&lt;p&gt;可変長引数については次回説明をする。&lt;/p&gt;</content><author><name></name></author><summary type="html">前回thorに書き換えたmy_helpに変更を加えた。</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-20/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-20T00:00:00+09:00</published><updated>2019-07-20T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-20/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-20/my_help">&lt;p&gt;gliで書かれたプログラムをThorに書き換えていく。&lt;/p&gt;
+&lt;p&gt;可変長引数については次回説明をする。&lt;/p&gt;</content><author><name></name></author><summary type="html">前回thorに書き換えたmy_helpに変更を加えた。</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/my_jekyll/19-07-20/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-20T00:00:00+09:00</published><updated>2019-07-20T00:00:00+09:00</updated><id>http://localhost:4000/my_jekyll/19-07-20/my_help</id><content type="html" xml:base="http://localhost:4000/my_jekyll/19-07-20/my_help">&lt;p&gt;gliで書かれたプログラムをThorに書き換えていく。&lt;/p&gt;
 
 &lt;p&gt;まずは書き換える際に便利なコマンドを紹介する。&lt;/p&gt;
 
@@ -75,70 +225,4 @@
 
 &lt;p&gt;を繰り返し、コマンドを完成させる。&lt;/p&gt;
 
-&lt;p&gt;フォークしてきたプログラムと同じ動きを再現できればOK&lt;/p&gt;</content><author><name></name></author><summary type="html">gliで書かれたプログラムをThorに書き換えていく。</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-18/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-18T00:00:00+09:00</published><updated>2019-07-18T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-18/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-18/my_help">&lt;p&gt;my_helpのthorへの書き換えを行う。&lt;/p&gt;
-
-&lt;p&gt;my_helpのbinフォルダの中にgliで書かれているmy_helpがあるので、これをthorへ書き換える。&lt;/p&gt;
-
-&lt;p&gt;その手順を記していく。&lt;/p&gt;
-
-&lt;p&gt;事前準備&lt;/p&gt;
-
-&lt;p&gt;1.まずはforkしたmy_helpがbundleで動くかどうかを確認。&lt;/p&gt;
-
-&lt;p&gt;bundle update&lt;/p&gt;
-
-&lt;p&gt;bundle exec bin/my_help&lt;/p&gt;
-
-&lt;p&gt;2.binフォルダのmy_helpをmy_help_thorにコピー。&lt;/p&gt;
-
-&lt;p&gt;cp my_help my_help_thor&lt;/p&gt;
-
-&lt;p&gt;3.2.のコピーが正しく行われているかどうかを確認&lt;/p&gt;
-
-&lt;p&gt;bundle update&lt;/p&gt;
-
-&lt;p&gt;bundle exec bin/my_help_thor&lt;/p&gt;
-
-&lt;p&gt;これでmy_helpが動けばOK&lt;/p&gt;</content><author><name></name></author><summary type="html">my_helpのthorへの書き換えを行う。</summary></entry><entry><title type="html">My_help</title><link href="http://localhost:4000/jekyll_blog/19-07-17/my_help" rel="alternate" type="text/html" title="My_help" /><published>2019-07-17T00:00:00+09:00</published><updated>2019-07-17T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-17/my_help</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-17/my_help">&lt;p&gt;daddygongonからmy_helpをfork&lt;/p&gt;
-
-&lt;p&gt;If this dialog fails to load, you can visit the fork page directly.&lt;/p&gt;
-
-&lt;p&gt;となり、forkすることができない。&lt;/p&gt;
-
-&lt;p&gt;リンクから直接forkすることはできるが、おそらくpull_requestできない。&lt;/p&gt;
-
-&lt;p&gt;A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.&lt;/p&gt;
-
-&lt;p&gt;リンクからforkしようとするとTeam_Nishitaniでfork済とでたのでkeigo7okabataでfork
-。&lt;/p&gt;
-
-&lt;p&gt;git clone https://github.com/keigo7okabata/my_helpでレポジトリを自分のローカルレポジトリにクローン。&lt;/p&gt;
-
-&lt;p&gt;my_help.gemspecに下記一行を追加。&lt;/p&gt;
-
-&lt;p&gt;s.add_development_dependency(‘thor’)&lt;/p&gt;
-
-&lt;p&gt;ここで一旦pull_requestを行うがやはりできない。&lt;/p&gt;
-
-&lt;p&gt;Checking mergeability… Don’t worry, you can still create the pull request.&lt;/p&gt;
-
-&lt;p&gt;とりあえずthorへの書き換えを行うことにする。&lt;/p&gt;</content><author><name></name></author><summary type="html">daddygongonからmy_helpをfork</summary></entry><entry><title type="html">課題</title><link href="http://localhost:4000/jekyll_blog/19-07-16/%E8%AA%B2%E9%A1%8C" rel="alternate" type="text/html" title="課題" /><published>2019-07-16T00:00:00+09:00</published><updated>2019-07-16T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-16/%E8%AA%B2%E9%A1%8C</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-16/%E8%AA%B2%E9%A1%8C">&lt;p&gt;my_helpをthorに書き換える&lt;/p&gt;
-
-&lt;p&gt;このブログにて、書き換えの手順を示す&lt;/p&gt;</content><author><name></name></author><summary type="html">my_helpをthorに書き換える</summary></entry><entry><title type="html">Jekyll</title><link href="http://localhost:4000/jekyll_blog/19-07-13/jekyll" rel="alternate" type="text/html" title="Jekyll" /><published>2019-07-13T00:00:00+09:00</published><updated>2019-07-13T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-13/jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-13/jekyll">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://qiita.com/daddygongon/items\
-/9b7182db29861744fc79&quot;&gt;jekyllのinstallとGithubPageとの連携&lt;/a&gt;&lt;/strong&gt;を参考に&lt;/p&gt;
-
-&lt;p&gt;1.まずはlocal_serverを立ち上げる&lt;/p&gt;
-
-&lt;p&gt;2.サーバーを立ち上げる際にエラーが出たので&lt;/p&gt;
-
-&lt;p&gt;gem ‘ffi’, ‘= 1.9.21’&lt;/p&gt;
-
-&lt;p&gt;をGemfileに追加し、&lt;/p&gt;
-
-&lt;p&gt;gem install ffi -v ‘1.9.21’&lt;/p&gt;
-
-&lt;p&gt;を行うことで解決。&lt;/p&gt;
-
-&lt;p&gt;3.GitHubにてレポジトリを作成し、git remote “作ったレポジトリのアドレス”&lt;/p&gt;</content><author><name></name></author><summary type="html">jekyllのinstallとGithubPageとの連携を参考に</summary></entry><entry><title type="html">課題</title><link href="http://localhost:4000/jekyll_blog/19-07-08/%E8%AA%B2%E9%A1%8C" rel="alternate" type="text/html" title="課題" /><published>2019-07-08T00:00:00+09:00</published><updated>2019-07-08T00:00:00+09:00</updated><id>http://localhost:4000/jekyll_blog/19-07-08/%E8%AA%B2%E9%A1%8C</id><content type="html" xml:base="http://localhost:4000/jekyll_blog/19-07-08/%E8%AA%B2%E9%A1%8C">&lt;p&gt;my_helpをthorに書き換える&lt;/p&gt;
-
-&lt;p&gt;my_helpをforkし、西谷さんにpull_request&lt;/p&gt;</content><author><name></name></author><summary type="html">my_helpをthorに書き換える</summary></entry></feed>
+&lt;p&gt;フォークしてきたプログラムと同じ動きを再現できればOK&lt;/p&gt;</content><author><name></name></author><summary type="html">gliで書かれたプログラムをThorに書き換えていく。</summary></entry></feed>

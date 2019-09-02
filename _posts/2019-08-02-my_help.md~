@@ -1,0 +1,7 @@
+新しいアカウントでTeamNishitaniに参加。
+
+gitHubに公開鍵が設定されていなかったので、このブログを移動できなかったので公開鍵を設定。
+
+公開鍵は隠しファイルの.sshの中に保存されているのでpbcopyを用いてコピー。
+
+gitHub内でsettings/ssh/Add SSH keyと進んでいき、titleに公開鍵名、key
