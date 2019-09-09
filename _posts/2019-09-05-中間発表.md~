@@ -1,0 +1,59 @@
+my_helpをgliからthorへの書き換え
+
+仮説
+
+もともとmy_helpはgliでかかれていたが、バージョンをアップデート(何をアップデートしたのかは覚えていない)した際にmy_helpを開くことができなくなり、結果的にバージョンを落とさなければならなかった。
+
+それならばgliよりthorの方が使いやすいので、書き換えてしまえばよいのではないかというのが始まり。
+
+手段
+
+my_helpのbinフォルダの中にgliで書かれているmy_helpがあるので、これをthorへ書き換える。
+
+事前準備
+
+1.まずはforkしたmy_helpがbundleで動くかどうかを確認。
+
+bundle update
+
+bundle exec bin/my_help
+
+2.binフォルダのmy_helpをmy_help_thorにコピー。
+
+cp my_help my_help_thor
+
+3.2.のコピーが正しく行われているかどうかを確認
+
+bundle update
+
+bundle exec bin/my_help_thor
+
+これでmy_helpが動けば事前準備は完了。
+
+今回はmy_helpをthorへ書き換えるので
+
+require ‘thor’
+
+require ‘my_help’
+
+と書き加え、classをThorに継承したいので
+
+class MyCLI < Thor
+
+と書き換えることを忘れてはいけない。
+
+bundle update
+
+bundle exec bin/my_help
+
+を繰り返し、それぞれのコマンドを完成させる。
+
+フォークしてきたプログラムと同じ動きを再現できれば書き換え完了である。
+
+結果
+
+書き換え自体は問題なく、thorでmy_helpを動かすことができるようになった。
+
+プログラムとしてはgliでかかれたものは82行であったが、thorでかくことで51行に抑えることができ、プログラムを短縮することができた。
+
+山口君がテストを行っているが、gliよりもthorの方が簡単になった。
